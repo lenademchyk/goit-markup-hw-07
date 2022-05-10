@@ -68,12 +68,12 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.heder-nav {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.logo {
   color: var(--accent-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -84,23 +84,23 @@ ul {
   padding-bottom: 25px;
 }
 
-.logo-first {
+.logo--first {
   color: #000000;
 }
 
-.site-nav {
+.menu-nav {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .item-nav:not(:last-child) {
+.menu-nav .menu-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.item-nav {
+.menu-nav__item {
   position: relative;
 }
 
-.site-nav .link {
+.menu-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -112,12 +112,12 @@ ul {
   transition: color var(--time-delay) var(--cubic);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.menu-nav .link:hover,
+.menu-nav .link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.menu-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -139,7 +139,7 @@ ul {
   margin-left: auto;
 }
 
-.contacts-nav .item-nav-icons + .item-nav-icons {
+.contacts-nav .contacts-nav__item + .contacts-nav__item {
   margin-left: 50px;
 }
 
@@ -162,12 +162,12 @@ ul {
   color: var(--accent-color);
 }
 
-.link:hover .nav-icons,
-.link:focus .nav-icons {
+.link:hover .contacts-nav__icons,
+.link:focus .contacts-nav__icons {
   fill: var(--accent-color);
 }
 
-.nav-icons {
+.contacts-nav__icons {
   margin-right: 10px;
   fill: var(--primary-text-color);
 
@@ -193,7 +193,7 @@ ul {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
