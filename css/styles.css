@@ -804,7 +804,7 @@ ul {
   transition: transform var(--time-delay);
 }
 
-.modal-close-btn {
+.modal-close__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -817,7 +817,7 @@ ul {
   transition: fill var(--time-delay) var(--cubic);
 }
 
-.icon-modal-btn {
+.modal-close__icon .modal-close__btn {
   display: inline-block;
   width: 11px;
   height: 11px;
@@ -825,7 +825,7 @@ ul {
   align-items: center;
 }
 
-.modal-close-btn:hover,
+.modal-close__btn:hover,
 .modal-close-btn:focus {
   fill: var(--accent-color);
 }
@@ -836,7 +836,7 @@ ul {
   visibility: hidden;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -851,7 +851,16 @@ ul {
   padding-right: 40px;
 }
 
-.modal-input {
+.modal-field__label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-field__input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -862,21 +871,21 @@ ul {
   transition: border-color var(--time-delay) var(--cubic);
 }
 
-.modal-input:hover,
-.modal-input:focus {
+.modal-field__input:hover,
+.modal-field__input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-input:hover + .input-icon,
-.modal-input:focus + .input-icon {
+.modal-field__input:hover + .modal-field__icon,
+.modal-field__input:focus + .modal-field__icon {
   fill: var(--accent-color);
 }
 
-.input-wrap {
+.modal-field__wrap {
   position: relative;
 }
 
-.input-icon {
+.modal-field__icon {
   position: absolute;
   display: inline-block;
   fill: var(--title-text-color);
@@ -886,7 +895,12 @@ ul {
   transition: fill var(--time-delay) var(--cubic);
 }
 
-.modal-label {
+.modal-comment {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal-comment__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -895,11 +909,7 @@ ul {
   margin-bottom: 4px;
 }
 
-.modal-comment {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.modal-text {
+.modal-comment__text {
   width: 100%;
   min-height: 120px;
 
@@ -914,7 +924,7 @@ ul {
   resize: none;
 }
 
-.modal-text::placeholder {
+.modal-comment__text::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-checkbox {
@@ -924,7 +934,27 @@ ul {
   /* padding-right: 51px; */
 }
 
-.check-conditions {
+.modal-checkbox__input:checked + .modal-checkbox__conditions span {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 2px;
+}
+
+.modal-checkbox__input:checked
+  + .modal-checkbox__conditions
+  .modal-checkbox__icon {
+  fill: var(--main-white-color);
+}
+
+.modal-checkbox__input {
+  transition: border-color var(--time-delay) var(--cubic);
+}
+
+.modal-checkbox__input:focus + .modal-checkbox__conditions span {
+  border-color: var(--accent-color);
+}
+
+.modal-checkbox__conditions {
   font-size: 14px;
   line-height: 24px;
   display: flex;
@@ -933,7 +963,7 @@ ul {
   text-align: center;
 }
 
-.check-conditions span {
+.modal-checkbox__conditions span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
@@ -944,36 +974,18 @@ ul {
   justify-content: center;
 }
 
-.check-icon {
+.modal-checkbox__icon {
   fill: transparent;
 }
 
-.policy-conditions {
+.modal-checkbox__policy {
   text-decoration: underline;
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-color);
 }
 
-.input-check:checked + .check-conditions span {
-  background-color: var(--accent-color);
-  border: none;
-  border-radius: 2px;
-}
-
-.input-check:checked + .check-conditions .check-icon {
-  fill: var(--main-white-color);
-}
-
-.input-check {
-  transition: border-color var(--time-delay) var(--cubic);
-}
-
-.input-check:focus + .check-conditions span {
-  border-color: var(--accent-color);
-}
-
-.modal-btn {
+.modal-send__btn {
   display: block;
   margin: 0 auto;
   padding: 10px 51px;
@@ -989,7 +1001,7 @@ ul {
   color: var(--main-white-color);
 }
 
-.modal-btn:hover {
+.modal-send__btn:hover {
   background: var(--second-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
