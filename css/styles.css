@@ -41,9 +41,16 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: inline-block;
 }
 
 /* .button {
@@ -76,18 +83,12 @@ ul {
   align-items: center;
 }
 
-.logo {
-  color: var(--accent-color);
-  font-family: Raleway, cursive;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  display: inline-block;
+.heder__logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.logo--first {
+.logo--header {
   color: #000000;
 }
 
@@ -165,12 +166,12 @@ ul {
   color: var(--accent-color);
 }
 
-.link:hover .contacts-nav__icons,
-.link:focus .contacts-nav__icons {
+.link:hover .contacts-nav__icon,
+.link:focus .contacts-nav__icon {
   fill: var(--accent-color);
 }
 
-.contacts-nav__icons {
+.contacts-nav__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
 
@@ -208,7 +209,7 @@ ul {
   margin: 0 auto;
 }
 
-.btn-primary {
+.btn--hero {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -233,8 +234,8 @@ ul {
     background-color var(--time-delay) var(--cubic); */
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn--hero:hover,
+.btn--hero:focus {
   color: var(--main-white-color);
   background-color: var(--second-accent-color);
 }
@@ -284,14 +285,10 @@ ul {
 
 /* ----------Gallery---+---Team--------------------------------- */
 
-.gallery-item {
+.gallery-list {
   display: flex;
   margin-right: calc(-1 * var(--card-set-gap));
 }
-
-/* .gallary-title {
-  padding-top: 94px;
-} */
 
 .gallery__title,
 .team__title {
@@ -302,7 +299,7 @@ ul {
   padding-bottom: 50px;
 }
 
-.gallery-item__text {
+.gallery-list__text {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -313,14 +310,14 @@ ul {
   justify-content: center;
 }
 
-.gallery-item__img {
+.gallery-list__item {
   margin-right: var(--card-set-gap);
   flex-basis: calc((100%-90px) / 3);
   position: relative;
   /* overflow: hidden; */
 }
 
-.gallery-item__img > .gallery-item__text {
+.gallery-list__item > .gallery-list__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -601,17 +598,8 @@ ul {
   padding-bottom: 60px;
 }
 
-.logo-second {
+.logo--footer {
   color: var(--main-white-color);
-}
-
-.footer-logo {
-  color: var(--accent-color);
-  font-family: Raleway, cursive;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  display: inline-block;
 }
 
 .contacts-list .contacts-list__link--address {
