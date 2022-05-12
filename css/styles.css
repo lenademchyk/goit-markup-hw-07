@@ -556,7 +556,7 @@ ul {
   /* overflow: auto; */
 
   transition: background var(--time-delay) var(--cubic);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--time-delay) linear;
 }
 
