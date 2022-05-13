@@ -67,11 +67,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button
-            type="button"
-            class="hero__btn button btn--hero"
-            data-modal-open
-          >
+          <button type="button" class="hero__btn btn btn--hero" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -390,7 +386,7 @@
             <ul class="contacts-list">
               <li class="contacts-list__item">
                 <a
-                  class="contacts-list__link--address"
+                  class="contacts-list__address-link"
                   href="https://goo.gl/maps/YJZgbJqbpXqxFB2o8"
                   target="_blank"
                   rel="noopener noindex nofollow"
@@ -454,7 +450,9 @@
                 required
               />
               <div class="sign-wrap__btn">
-                <button type="submit" class="send-btn">Подписаться</button>
+                <button type="submit" class="sign-wrap__send-btn btn">
+                  Подписаться
+                </button>
                 <svg class="sign-wrap__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -466,8 +464,8 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close__btn" data-modal-close>
-          <svg class="modal-close__icon" width="11" height="11">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-Vector-1"></use>
           </svg>
         </button>
@@ -552,7 +550,7 @@
               ></label
             >
           </div>
-          <button type="submit" class="modal-send__btn">Отправить</button>
+          <button type="submit" class="modal__send-btn btn">Отправить</button>
         </form>
       </div>
     </div>
