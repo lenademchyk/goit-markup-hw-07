@@ -71,6 +71,13 @@ ul {
   /* display: inline-block; */
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
 /* ------прихований заголовок / checkbox--------------------  */
 
 .visually-hidden {
@@ -298,19 +305,14 @@ ul {
   margin-top: 10px;
 }
 
-/* ----------Gallery---+---Team--------------------------------- */
+/* ----------Gallery-------------------------------- */
 
 .gallery-list {
   display: flex;
   margin-right: calc(-1 * var(--card-set-gap));
 }
 
-.gallery__title,
-.team__title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+.gallery__title {
   padding-bottom: 50px;
 }
 
@@ -345,6 +347,10 @@ ul {
 
 .team {
   background-color: var(--secondary-bg-color);
+}
+
+.team__title {
+  padding-bottom: 50px;
 }
 
 .team-list {
@@ -425,10 +431,6 @@ ul {
 /* ---------------Clients-------------------------------- */
 
 .clients__title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
   padding-bottom: 50px;
 }
 
