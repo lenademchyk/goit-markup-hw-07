@@ -1,0 +1,33 @@
+.contacts-list .contacts-list__address-link {
+  color: var(--main-white-color);
+  font-style: normal;
+  margin-top: 20px;
+
+  transition: color var(--time-delay) var(--cubic);
+}
+
+.contacts-list .contacts-list__address-link:hover,
+.contacts-list .contacts-list__address-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-list .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+
+  transition: color var(--time-delay) var(--cubic);
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-list {
+  margin-top: 20px;
+}
+
+.contacts-list .contacts-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
