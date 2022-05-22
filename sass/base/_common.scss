@@ -15,18 +15,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-
-  transition: opacity var(--time-delay), visibility var(--time-delay);
-}
-
-.backdrop.is-hidden .modal {
-  transform: scale(0.5);
-}

@@ -9,11 +9,12 @@
 @import './components/container';
 @import './components/logo';
 @import './components/btn';
-@import './components/title';
+@import './components/backdrop';
+@import './components/modal';
 
 @import './layout/header';
 @import './layout/hero';
-@import './layout/future';
+@import './layout/features';
 @import './layout/gallery';
 @import './layout/team';
 @import './layout/soc-list';
@@ -23,4 +24,4 @@
 @import './layout/contacts';
 @import './layout/join';
 @import './layout/sign';
-@import './layout/modal';
+@import './layout/modal-field';

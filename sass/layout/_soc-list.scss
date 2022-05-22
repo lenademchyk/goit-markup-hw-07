@@ -7,18 +7,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition: background-color var(--time-delay) var(--cubic),
     fill var(--time-delay) var(--cubic);
-}
-
-.soc-list__link:hover,
-.soc-list__link:focus {
-  background-color: var(--accent-color);
-}
-
-.soc-list__link:hover .soc-list__icon {
-  fill: var(--main-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &:hover .soc-list__icon {
+    fill: var(--main-white-color);
+  }
 }
 
 .soc-list {
@@ -33,6 +30,5 @@
 
 .soc-list__icon {
   fill: var(--soc-net-icons);
-
   transition: fill var(--time-delay) var(--cubic);
 }

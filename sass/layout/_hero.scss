@@ -26,22 +26,3 @@
   text-align: inherit;
   margin: 0 auto;
 }
-.btn--hero {
-  padding: 10px 32px;
-  margin-top: var(--card-set-gap);
-  border: 0;
-  display: inline-block;
-
-  transition-property: var(--second-accent-color);
-  transition-duration: var(--cubic);
-  transition-timing-function: linear;
-
-  /* transition: color var(--time-delay) var(--cubic),
-    background-color var(--time-delay) var(--cubic); */
-}
-
-.btn--hero:hover,
-.btn--hero:focus {
-  color: var(--main-white-color);
-  background-color: var(--second-accent-color);
-}

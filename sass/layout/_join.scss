@@ -34,14 +34,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition: background-color var(--time-delay) var(--cubic),
     fill var(--time-delay) var(--cubic);
-}
-
-.join-soc-list__link:hover,
-.join-soc-list__link:focus,
-.join-soc-list__link:hover,
-.join-soc-list__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
